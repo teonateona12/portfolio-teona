@@ -1,20 +1,27 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-
 import HomePage from "./components/HomePage";
 import Footer from "./components/Footer";
-import Projects from "./components/Projects";
+import Portfolio from "./components/Portfolio";
 import Header from "./components/Header";
 import { useState } from "react";
 
 function App() {
-  const [home, setHome] = useState(true);
+  const [portfolioPage, setPortfolioPage] = useState(true);
+  const [cardProject, setCardProject] = useState(false);
+
   return (
     <div>
       <div className="p-8">
         <Header />
-        {home ? <HomePage setHome={setHome} /> : <Projects />}
+        {portfolioPage ? (
+          <Portfolio
+            setCardProject={setCardProject}
+            cardProject={cardProject}
+            setPortfolioPage={setPortfolioPage}
+          />
+        ) : (
+          <HomePage setPortfolioPage={setPortfolioPage} />
+        )}
       </div>
       <Footer />
     </div>

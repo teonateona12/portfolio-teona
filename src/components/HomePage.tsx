@@ -3,9 +3,9 @@ import image1 from "../images/Group 3.png";
 import myimage from "../images/myimage.jpg";
 import { HomePageProps } from "./types";
 
-const HomePage = ({ setHome }: HomePageProps) => {
+const HomePage = ({ setPortfolioPage }: HomePageProps) => {
   const click = () => {
-    setHome(false);
+    setPortfolioPage(true);
   };
   return (
     <div>
