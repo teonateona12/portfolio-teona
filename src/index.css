@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: "Ibarra Real Nova", serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-color {
+  color: #33323d;
+}
+.backgrnd-color {
+  background-color: #203a4c;
+}
+.btn {
+  border: 1px solid;
+}
