@@ -1,12 +1,10 @@
 import image from "../images/Group 16.png";
 import image1 from "../images/Group 3.png";
 import myimage from "../images/myimage.jpg";
-import { HomePageProps } from "./types";
+import { Link} from "react-router-dom";
 
-const HomePage = ({ setPortfolioPage }: HomePageProps) => {
-  const click = () => {
-    setPortfolioPage(true);
-  };
+const HomePage = () => {
+ 
   return (
     <div>
       <div className="mt-8">
@@ -32,8 +30,8 @@ const HomePage = ({ setPortfolioPage }: HomePageProps) => {
               time to programming and building projects. I love solving problems
               and I am very motivated.
             </p>
-            <button className="btn p-3 mt-4 text-xs" onClick={click}>
-              GO TO PORTFOLIO
+            <button className="btn p-3 mt-4 text-xs">
+              <Link to="/portfolio">GO TO PORTFOLIO</Link>
             </button>
             <hr className="mt-5"></hr>
           </div>
