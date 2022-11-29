@@ -7,17 +7,12 @@ import { useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import ProjectWebsite from "./components/ProjectWebsite";
 function App() {
- 
-
   return (
     <div>
-      <div className="p-8">
+      <div className="p-8 md:py-20 md:mx-10 xl:px-28">
         <Header />
         <Routes>
-          <Route
-            path="/"
-            element={<HomePage  />}
-          />
+          <Route path="/" element={<HomePage />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route
             path="/portfolio/cardProject"
@@ -30,7 +25,6 @@ function App() {
         </Routes>
       </div>
 
-     
       <Footer />
     </div>
   );

@@ -21,3 +21,6 @@ code {
 .btn {
   border: 1px solid;
 }
+.div {
+  flex-direction: inherit;
+}
