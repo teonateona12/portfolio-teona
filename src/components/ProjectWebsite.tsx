@@ -7,12 +7,19 @@ const ProjectWebsite = ({ name, image, text, skills }: ProjectWebsiteProps) => {
     <div className="mt-16">
       <img src={image} />
       <hr className="my-10"></hr>
-      <h1 className="text-black text-4xl font-bold ">{name}</h1>
-      <p className="leading-7	w-[80%] my-7">{text}</p>
-      <p className="skills">{skills}</p>
-      <button className="btn p-3 my-4 text-xs">
-        <Link to=""> VIEW WEBSITE</Link>
-      </button>
+      <h1 className=" md:hidden text-black text-4xl font-bold ">{name}</h1>
+      <div className="md:flex">
+        <p className="leading-7	w-[80%] my-7">{text}</p>
+        <div>
+          <h1 className=" hidden md:flex text-black text-4xl font-bold ">
+            {name}
+          </h1>
+          <p className="skills">{skills}</p>
+          <button className="btn p-3 my-4 text-xs">
+            <Link to=""> VIEW WEBSITE</Link>
+          </button>
+        </div>
+      </div>
       <hr></hr>
       <h1 className="text-black text-3xl  ">Project Background</h1>
       <p className="my-7 leading-7	w-[90%]">
