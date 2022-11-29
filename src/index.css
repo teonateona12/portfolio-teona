@@ -24,3 +24,6 @@ code {
 .div {
   flex-direction: inherit;
 }
+.inp {
+  background-color: #e5e3ed;
+}

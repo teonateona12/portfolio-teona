@@ -1,5 +1,6 @@
 import "./App.css";
 import HomePage from "./components/HomePage";
+import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
 import Header from "./components/Header";
@@ -21,6 +22,7 @@ function App() {
             path="/portfolio/githubUserProject"
             element={<ProjectWebsite name="Github user project" />}
           />
+          <Route path="/contact" element={<ContactMe />} />
         </Routes>
       </div>
 
