@@ -3,8 +3,7 @@ import HomePage from "./components/HomePage";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
 import Header from "./components/Header";
-import { useState } from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import ProjectWebsite from "./components/ProjectWebsite";
 function App() {
   return (

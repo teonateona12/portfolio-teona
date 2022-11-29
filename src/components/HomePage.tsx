@@ -1,7 +1,6 @@
 import image from "../images/images/homepage/mobile/image-homepage-hero.jpg";
 import imagetab from "../images/images/homepage/tablet/image-homepage-hero.jpg";
 import imagedes from "../images/images/homepage/desktop/image-homepage-hero.jpg";
-
 import image1 from "../images/Group 3.png";
 import myimage from "../images/myimage.jpg";
 import { Link } from "react-router-dom";
