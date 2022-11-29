@@ -2,6 +2,7 @@ import Project from "./Project";
 import project1 from "../images/interactiveCard.jpg";
 import project2 from "../images/githubUser.jpg";
 import ProjectImgRight from "./ProjectImgRight";
+import DoProjectTogether from "./DoProjectTogether";
 
 const Portfolio = () => {
   return (
@@ -33,6 +34,7 @@ const Portfolio = () => {
         image={project1}
         path="/portfolio/cardProject"
       />
+      <DoProjectTogether />
     </div>
   );
 };

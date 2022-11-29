@@ -3,6 +3,7 @@ import imagetab from "../images/images/homepage/tablet/image-homepage-hero.jpg";
 import imagedes from "../images/images/homepage/desktop/image-homepage-hero.jpg";
 import image1 from "../images/Group 3.png";
 import myimage from "../images/myimage.jpg";
+import DoProjectTogether from "./DoProjectTogether";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -42,6 +43,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <DoProjectTogether />
     </div>
   );
 };
