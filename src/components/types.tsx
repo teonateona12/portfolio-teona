@@ -12,7 +12,7 @@ export interface ProjectProps {
 
 export interface PortfolioProps {
   cardProject: boolean;
-  path:string
+  path: string;
   setCardProject: (event: boolean) => void;
   setPortfolioPage: (event: boolean) => void;
 }
@@ -20,9 +20,12 @@ export interface PortfolioProps {
 export interface ProjectsProps {
   setCardProject: (event: boolean) => void;
   setGithub: (event: boolean) => void;
-  path:string
+  path: string;
 }
 
 export interface ProjectWebsiteProps {
   name: string;
+  image: string;
+  text: string;
+  skills: string;
 }

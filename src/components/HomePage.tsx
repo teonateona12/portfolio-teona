@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="mt-8">
-        <img className="sm:hidden	" src={image} />
+        <img className="sm:hidden w-full	" src={image} />
         <img className="hidden md:flex lg:hidden" src={imagetab} />
         <img className="hidden lg:flex" src={imagedes} />
         <div>

@@ -21,9 +21,9 @@ code {
 .btn {
   border: 1px solid;
 }
-.div {
-  flex-direction: inherit;
-}
 .inp {
   background-color: #e5e3ed;
+}
+.skills {
+  color: #5fb4a2;
 }

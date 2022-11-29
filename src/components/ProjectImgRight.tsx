@@ -10,7 +10,7 @@ const ProjectImgRight = ({ image, name, text, path }: ProjectProps) => {
       <div className="mt-5 md:order-1">
         <hr className="hidden md:flex md:mt-4"></hr>
         <h1 className="text-color text-4xl font-bold">{name}</h1>
-        <p className="text-color">{text}</p>
+        <p className="text-color w-[80%] mt-5 leading-7">{text}</p>
         <button className="btn p-3 mt-4 text-xs">
           <Link to={path}> VIEW PROJECT</Link>
         </button>

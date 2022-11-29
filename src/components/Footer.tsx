@@ -12,7 +12,7 @@ const Footer = () => {
     <div>
       <footer className="backgrnd-color mt-20">
         <div className="flex justify-center py-10">
-          <div className="div gap-6 flex-col flex md:justify-between md:flex md:w-[90%] xl:w-[77%]">
+          <div className="div gap-6 flex-col flex md:justify-between md:flex md:w-[90%] md:flex-row	 xl:w-[77%]">
             <img src={image} />
             <p className="text-white text-center">
               <Link to="/">HOME</Link>
