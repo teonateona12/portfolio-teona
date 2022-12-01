@@ -8,9 +8,11 @@ import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
 import Header from "./components/Header";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useParams } from "react-router-dom";
 import ProjectWebsite from "./components/ProjectWebsite";
 function App() {
+  const { projectId } = useParams();
+
   return (
     <div>
       <div className="p-8 md:py-20 md:mx-10 xl:px-28">
@@ -18,7 +20,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route
+          <Route path="/portfolio/:projectId" element={<ProjectWebsite />} />
+
+          {/* <Route
             path="/portfolio/interactive-card"
             element={
               <ProjectWebsite
@@ -65,7 +69,7 @@ function App() {
                 HTML/Css/JavaScript"
               />
             }
-          />
+          /> */}
           <Route path="/contact" element={<ContactMe />} />
         </Routes>
       </div>

@@ -11,22 +11,22 @@ const HomePage = () => {
     <div>
       <div className="mt-8">
         <img className="sm:hidden w-full	" src={image} />
-        <img className="hidden md:flex lg:hidden" src={imagetab} />
+        <img className="hidden md:flex lg:hidden md:z-0	" src={imagetab} />
         <img className="hidden lg:flex" src={imagedes} />
-        <div>
+        <div className="md:absolute md:z-10	md:-mt-[30%] md:bg-white md:w-[60%] md:p-10 lg:-mt-[20%] lg:w-[50%] xl:-mt-[15%] 2xl:-mt-[10%]">
           <h1 className="text-color mt-5 text-4xl font-bold tracking-wide ">
             Hey, I’m Teona Piranishvili and I love building beautiful websites
           </h1>
-          <div className="backgrnd-color w-[55%] flex justify-between p-4 mt-7">
+          <div className="backgrnd-color w-[55%] flex justify-between p-4 mt-7 md:w-[33%]">
             <img src={image1} />
-            <button className="text-white text-xs tracking-widest ">
+            <button className="text-white text-xs tracking-widest  ">
               ABOUT ME
             </button>
           </div>
         </div>
         <div className="mt-10 md:flex md:gap-10 xl:gap-28">
           <img className="md:w-[50%]" src={myimage} />
-          <div className="mt-5 md:mt-0">
+          <div className="mt-5 md:mt-8">
             <hr></hr>
             <h1 className="text-color text-4xl font-bold tracking-wide mt-3">
               About Me
