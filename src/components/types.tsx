@@ -1,25 +1,27 @@
-export interface HomePageProps {
-  setPortfolioPage: (event: boolean) => void;
-}
-
 export interface ProjectProps {
   name: string;
   text: string;
   image: string;
+  path: string;
   setCardProject?: (event: boolean) => void;
 }
-
-export interface PortfolioProps {
-  cardProject: boolean;
-  setCardProject: (event: boolean) => void;
-  setPortfolioPage: (event: boolean) => void;
-}
-
 export interface ProjectsProps {
   setCardProject: (event: boolean) => void;
   setGithub: (event: boolean) => void;
+  path: string;
 }
 
 export interface ProjectWebsiteProps {
+  name: string;
+  image: string;
+  text: string;
+  skills: string;
+}
+
+export interface projectProps {
+  id?: string;
+  text: string;
+  image: string;
+  skills: string;
   name: string;
 }
