@@ -28,7 +28,10 @@ const ProjectWebsite = () => {
           </h1>
           <p className="skills">{project?.skills}</p>
           <button className="btn p-3 my-4 text-xs">
-            <Link to=""> VIEW WEBSITE</Link>
+            <a href={`${`https://teonateona12.github.io/${project?.url}`}`}>
+              {" "}
+              VIEW WEBSITE
+            </a>
           </button>
         </div>
       </div>
