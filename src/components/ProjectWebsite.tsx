@@ -2,6 +2,7 @@ import DoProjectTogether from "./DoProjectTogether";
 import { Link, useParams } from "react-router-dom";
 import projects from "./data";
 import { projectProps } from "./types";
+import Slider from "./Slider";
 
 const ProjectWebsite = () => {
   const { projectId } = useParams();
@@ -44,6 +45,7 @@ const ProjectWebsite = () => {
       </p>
       <h1 className="text-black text-3xl">Static Previews</h1>
       <img className="mt-7" src={project?.image} />
+      <Slider />
       <DoProjectTogether />
     </div>
   );

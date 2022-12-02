@@ -10,7 +10,7 @@ const Portfolio = () => {
   return (
     <div>
       <Project
-        name="Interactive card details"
+        name="Interactive card"
         text="This project required me to build a fully responsive interactive card details app
         . I used HTML5, tailwind and TypeScript."
         image={project1}
@@ -18,7 +18,7 @@ const Portfolio = () => {
       />
 
       <ProjectImgRight
-        name="Github user search"
+        name="Github user "
         text="This project required me to build a fully responsive github user search app
         . I used HTML5, tailwind and TypeScript."
         image={project2}
@@ -26,7 +26,7 @@ const Portfolio = () => {
       />
 
       <Project
-        name="Tip calculator app"
+        name="Tip calculator"
         text="This project required me to build a fully responsive tip calculator app
         . I used HTML5, tailwind and TypeScript."
         image={calculator}
@@ -34,12 +34,13 @@ const Portfolio = () => {
       />
 
       <ProjectImgRight
-        name="Tic tac toe game"
+        name="Tic tac toe"
         text="This project required me to build a fully responsive tic tac toe game
         . I used HTML5, css and TypeScript."
         image={ticTacToe}
         path="/portfolio/tic-tac-toe"
       />
+
       <DoProjectTogether />
     </div>
   );

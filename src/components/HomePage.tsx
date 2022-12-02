@@ -4,7 +4,6 @@ import imagedes from "../images/images/homepage/desktop/image-homepage-hero.jpg"
 import image1 from "../images/Group 3.png";
 import myimage from "../images/myimage.jpg";
 import DoProjectTogether from "./DoProjectTogether";
-import MobileNav from "./MobileNav";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {

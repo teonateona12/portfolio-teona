@@ -25,3 +25,7 @@ export interface projectProps {
   skills: string;
   name: string;
 }
+
+export interface SliderProps {
+  setValue: (event: number) => void;
+}
