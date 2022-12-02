@@ -5,8 +5,15 @@ import image1 from "../images/Group 3.png";
 import myimage from "../images/myimage.jpg";
 import DoProjectTogether from "./DoProjectTogether";
 import { Link } from "react-router-dom";
+import { useRef } from "react";
 
 const HomePage = () => {
+  const aboutMe = useRef(null);
+  const scroll = (aboutMe: any) => {
+    window.scrollTo({
+      top: aboutMe.current.offsetTop,
+    });
+  };
   return (
     <div>
       <div className="mt-8">
@@ -19,12 +26,15 @@ const HomePage = () => {
           </h1>
           <div className="backgrnd-color w-[55%] flex justify-between p-4 mt-7 md:w-[33%]">
             <img src={image1} />
-            <button className="text-white text-xs tracking-widest  ">
-              ABOUT ME
+            <button
+              onClick={() => scroll(aboutMe)}
+              className="text-white text-xs tracking-widest  "
+            >
+              about me
             </button>
           </div>
         </div>
-        <div className="mt-10 md:flex md:gap-10 xl:gap-28">
+        <div ref={aboutMe} className="mt-10 md:flex md:gap-10 xl:gap-28">
           <img className="md:w-[50%]" src={myimage} />
           <div className="mt-5 md:mt-8">
             <hr></hr>

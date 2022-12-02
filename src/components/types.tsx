@@ -23,6 +23,7 @@ export interface projectProps {
   text: string;
   image: string;
   skills: string;
+  url?: string;
   name: string;
 }
 
