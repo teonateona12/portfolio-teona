@@ -30,7 +30,8 @@ const Header = () => {
           className="bg-black w-6 h-1  top-8 absolute"
         ></div>
         <div
-          style={isTrue ? { display: "none" } : { display: "flex" }}
+          style={{ display: isTrue ? "none" : "flex" }}
+          // style={isTrue ? { display: "none" } : { display: "flex" }}
           className="bg-black w-6 h-1 mt-2"
         ></div>
         <div
