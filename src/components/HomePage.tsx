@@ -7,6 +7,7 @@ import DoProjectTogether from "./DoProjectTogether";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
+  
   return (
     <div>
       <div className="mt-8">
@@ -19,12 +20,14 @@ const HomePage = () => {
           </h1>
           <div className="backgrnd-color w-[55%] flex justify-between p-4 mt-7 md:w-[33%]">
             <img src={image1} />
-            <button className="text-white text-xs tracking-widest  ">
-              ABOUT ME
-            </button>
+            <a href="#aboutMe"
+              className="text-white text-xs tracking-widest  "
+            >
+              about me
+            </a>
           </div>
         </div>
-        <div className="mt-10 md:flex md:gap-10 xl:gap-28">
+        <div id="aboutMe" className="mt-10 md:flex md:gap-10 xl:gap-28">
           <img className="md:w-[50%]" src={myimage} />
           <div className="mt-5 md:mt-8">
             <hr></hr>

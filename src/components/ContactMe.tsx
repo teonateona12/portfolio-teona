@@ -2,7 +2,41 @@ import linkedin from "../images/images/icons/linkedin.svg";
 import twitter from "../images/images/icons/twitter.svg";
 import github from "../images/images/icons/github.svg";
 import "../index.css";
+import { useState } from "react";
 const ContactMe = () => {
+  const [name, setName] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [nameError, setNameError] = useState<string>("");
+  const [emailError, setEmailError] = useState<string>("");
+  const [messageError, setMessageError] = useState<string>("");
+
+  const btnClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.preventDefault();
+    if (message === "") {
+      setMessageError("This field is required");
+    } else {
+      setMessageError("");
+    }
+
+    if (email === "") {
+      setEmailError("This field is required");
+    } else if (
+      !email.match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      )
+    ) {
+      setEmailError("Please use a valid email address");
+    } else {
+      setEmailError("");
+    }
+
+    if (name === "") {
+      setNameError("This field is required");
+    } else {
+      setNameError("");
+    }
+  };
   return (
     <div className="mt-12">
       <hr></hr>
@@ -32,23 +66,43 @@ const ContactMe = () => {
       <div className="xl:flex xl:justify-between">
         <h1 className="text-color text-4xl font-bold mt-8">Contact Me</h1>
         <form className="mt-7 xl:w-[50%]">
-          <label className="text-color font-bold">Name</label> <br />
-          <input
-            className="inp p-3 mt-2 w-full mb-7"
-            placeholder="Jane Appleseed"
-          ></input>
-          <label className="text-color font-bold mt-14">Email Address</label>{" "}
-          <br />
-          <input
-            className="inp p-3 mt-2 w-full  mb-7"
-            placeholder="email@example.com"
-          ></input>
-          <label className="text-color font-bold">Message</label> <br />
-          <input
-            className="inp p-3 pb-20 mt-2 w-full"
-            placeholder="How can I help?"
-          ></input>
-          <button className="backgrnd-color text-white p-5 mt-5">
+          <div>
+            <label className="text-color font-bold">Name</label> <br />
+            <input
+              value={name}
+              className="inp p-3 mt-2 w-full "
+              placeholder="Jane Appleseed"
+              onChange={(e) => setName(e.target.value)}
+            ></input>
+            <small className="text-red-600">{nameError}</small>
+          </div>
+          <div>
+            <br />
+            <label className="text-color font-bold ">Email Address</label>{" "}
+            <br />
+            <input
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              className="inp p-3 mt-2 w-full  "
+              placeholder="email@example.com"
+            ></input>
+            <small className="text-red-600">{emailError}</small>
+          </div>
+          <div>
+            <br />
+            <label className="text-color font-bold">Message</label> <br />
+            <input
+              onChange={(e) => setMessage(e.target.value)}
+              value={message}
+              className="inp p-3 pb-20 mt-2 w-full"
+              placeholder="How can I help?"
+            ></input>
+            <small className="text-red-600">{messageError}</small> <br />
+          </div>
+          <button
+            onClick={btnClick}
+            className="backgrnd-color text-white p-5 mt-5"
+          >
             SEND MESSAGE
           </button>
         </form>

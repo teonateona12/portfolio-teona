@@ -18,10 +18,17 @@ export interface ProjectWebsiteProps {
   skills: string;
 }
 
+
+
+export interface SliderProps {
+  setValue: (event: number) => void;
+}
+
 export interface projectProps {
-  id?: string;
+  id: string;
   text: string;
   image: string;
   skills: string;
+  url: string;
   name: string;
 }

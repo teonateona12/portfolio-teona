@@ -1,7 +1,8 @@
 import DoProjectTogether from "./DoProjectTogether";
-import { Link, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import projects from "./data";
-import { projectProps } from "./types";
+import {projectProps} from './types'
+import Slider from "./Slider";
 
 const ProjectWebsite = () => {
   const { projectId } = useParams();
@@ -27,7 +28,10 @@ const ProjectWebsite = () => {
           </h1>
           <p className="skills">{project?.skills}</p>
           <button className="btn p-3 my-4 text-xs">
-            <Link to=""> VIEW WEBSITE</Link>
+            <a href={`${`https://teonateona12.github.io/${project?.url}`}`}>
+              {" "}
+              VIEW WEBSITE
+            </a>
           </button>
         </div>
       </div>
@@ -44,6 +48,7 @@ const ProjectWebsite = () => {
       </p>
       <h1 className="text-black text-3xl">Static Previews</h1>
       <img className="mt-7" src={project?.image} />
+      <Slider />
       <DoProjectTogether />
     </div>
   );
