@@ -1,8 +1,3 @@
-import "./App.css";
-import project1 from "./images/interactiveCard.jpg";
-import calculator from "./images/images/portfolio/calculator.jpg";
-import ticTacToe from "./images/images/portfolio/tic-tac-toe.jpg";
-import project2 from "./images/githubUser.jpg";
 import HomePage from "./components/HomePage";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
