@@ -24,23 +24,20 @@ const Header = () => {
       </div>
       <div className="block md:hidden " onClick={btnClick}>
         <div
-          style={
-            isTrue
-              ? { transform: "rotate(55deg)", position: "absolute" }
-              : { transform: "rotate(0deg)" }
-          }
-          className="bg-black w-6 h-1  top-8"
+          style={{
+            transform: isTrue ? "rotate(55deg)" : "rotate(0deg)",
+          }}
+          className="bg-black w-6 h-1  top-8 absolute"
         ></div>
         <div
           style={isTrue ? { display: "none" } : { display: "flex" }}
-          className="bg-black w-6 h-1 mt-1"
+          className="bg-black w-6 h-1 mt-2"
         ></div>
         <div
-          style={
-            isTrue
-              ? { marginTop: "0px", transform: "rotate(-55deg)" }
-              : { marginTop: "4px", transform: "rotate(0deg)" }
-          }
+          style={{
+            marginTop: isTrue ? "0px" : "4px",
+            transform: isTrue ? "rotate(-55deg)" : "rotate(0deg)",
+          }}
           className="bg-black w-6 h-1 mt-1"
         ></div>
       </div>

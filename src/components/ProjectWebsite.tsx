@@ -1,7 +1,7 @@
 import DoProjectTogether from "./DoProjectTogether";
-import { Link, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import projects from "./data";
-import { projectProps } from "./types";
+import {projectProps} from './types'
 import Slider from "./Slider";
 
 const ProjectWebsite = () => {
